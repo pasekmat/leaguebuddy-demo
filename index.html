@@ -22,7 +22,8 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"></span><span class="title">Leaguebuddy</span>
+									<span class="symbol"></span>
+									<h1>Leaguebuddy</h1>
 								</a>
 
 							<!-- Nav -->
@@ -51,6 +52,11 @@
 					<div id="main">
 						<div class="inner">
 							<header>
+								<h3>Hello and welcome to the page dedicated to my new application called league buddy.</h3>
+								<p>
+									Below are a couple of sections that show the current state/UI of the application. Following them, you can find a description of planned features and also
+									a rough description of how the app uses Riot API.
+								</p>
 							</header>
 
 							<h1 style="padding-top: 64px">Tierlist</h1>
@@ -117,8 +123,9 @@
 							</section>
 
 							<h1 style="padding-top: 64px">User Profile</h1>
-							<p>Working progress. Login process is hooked up through firebase and there will one day be a way to connect it
+							<p>Work in progress. Login process is hooked up through firebase and there will one day hopefully be a way to connect it
 								through RSO with riot account</p>
+							<p>Users will be asked to create an in-app profile during onboarding process where they will be able to set up their username, several game related tags etc.</p>
 							<section class="tiles">
 								<article>
 									<span class="image">
@@ -128,6 +135,60 @@
 							</section>
 
 							<h1 style="padding-top: 64px">Future features</h1>
+							<p>There are several features planned for the application both small and quite big ones. However since this project is being developed as a practical part of my master’s thesis
+							it is still unknown which features will make it into the version that will be handed in. (deadline in May 2026)</p>
+
+							<h2 style="padding-top: 64px">Buddy-Finder feature</h2>
+							<p>This was the original, you could say flagship, idea behind deciding to create this app in the first place. I often come across posts on different platforms, groups etc. where people
+							are looking for someone to play with. Wether it's just to have fun, or actually grind some ranked and try to climb some elo. And most of the people playing the game know the struggle of
+								trying to climb elo on their own without a partner to duo queue up with/team to queue up with.
+								Hence, I came up with an idea of a community feature, where (in the initial, most simple version at least) users would be able to select some filters,
+								like Language, Open to VC, Voice chat platforms, Rank, In game interests (grind elo, fun, troll pick teemo, ...), etc. Based on this, the app would find users that match these filters
+								and the user could give them a like/thumbs up/or whatever. Mind you, these users would be represented only by their in-app profiles and usernames, not the riot usernames to prevent friend request spamming.
+								If the other person does the same, only then both users receive each others riot usernames and can add each other.
+							</p>
+							<p>This feature could very well be extended to finding buddies for clash too, although it would probably look a lot different.</p>
+
+							<h2 style="padding-top: 64px">Learning module</h2>
+							<p>This is only a very rough idea, since im not sure how many players would actually use something like this in an application. However, I think it would be nice to have a sort of
+								one-stop shop for knowledge about the games mechanics if one would like to learn about them. This module could either be completely created by me with the help of some higher end players that know more about the
+								games mechanics than I do, or it could just be a sort of compilation of the resources already out there. For example some text about a mechanic and then links to videos talking about it.
+							</p>
+
+							<h2 style="padding-top: 64px">Challenges and minigames</h2>
+							<p>
+								There are plenty of ideas about what I could create here, however the most basic one is having some game related challenges, for which users could gain some sort of in-app currency/points/whatever.
+								These could then be used for other stuff in app, like re-rolling challenges, buying in-app cosmetics for their profiles (would need to also set up an in-app shop for this obviously), or maybe purchasing some sort of riot
+								gift cards if that's still possible.
+								Also, among using these points, I had an idea about creating some sort of leaderboard of users, where they will be sorted by the amount of points they gained (it would be reset every once in a while). I am aware
+								the app should not be providing any custom rankings/leaderboards, similar to the ones in game which are elo based. Since this isn't elo based I am hoping this would be a-okay.
+								Final point to this feature, more complex ideas I had is creating some simple mini-games out of these challenges. These could be also made as a permanent feature or maybe a holiday one.
+							</p>
+
+							<h2 style="padding-top: 64px">Detailed statistics</h2>
+							<p>
+								On this feature I am still quite unclear, but I am pretty sure with the amount of data Riot API provides it could be possible to make. The idea is to have a custom detailed data/graphs/visualization, ready
+								for the user either in general, or for a particular match. It could show where he/she excelled, or fell behind, where the user deviated from the mostly used builds (perks/items) and much more.
+							</p>
+
+
+							<h1 style="padding-top: 64px">Usages of Riot API</h1>
+							<p>
+								Up until now, I have been using the riot api, mostly to periodically pull data about match details and compute tierlists and champion details (aggregated data).
+								This included at the start, pulling up the entries of a given league so that I have a base pool of summoners. <i>This should not be necessary anymore</i>
+							</p>
+							<p>
+								After I have a pool of summoners, I can start with the actual "match mining". Using the match api, I try to get all the matches any given users played in since the current patch dropped. This gives me a list of matchIds,
+								which are later used to call the match detail api, from which I acquire the champion, perk, item, etc. data, and also I am able to extend my summoner pool with the users that played in any given match.
+								This could for the most part be done under the dev api key rate limits.
+							</p>
+
+							<p>
+								However, what I will most definitely not be able to do with the current keys rate limits is support users which want to look up a summoners profile. This (in current state) requires 10 calls to the riot api. That is, 1 call to
+								the account api, 1 call to fetch the 8 most recent matches and lastly 8 calls for match details - one for each match. Suppose I only had a couple of users, the current rate limit could suffice, however with larger user base, definitely not.
+							</p>
+
+
 
 						</div>
 					</div>
