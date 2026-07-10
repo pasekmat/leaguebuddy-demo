@@ -5,193 +5,267 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>LeagueBuddy demo</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>LeagueBuddy demo</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		.appstore-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			background: #000;
+			color: #fff;
+			border: 1px solid #a6a6a6;
+			border-radius: 8px;
+			padding: 8px 16px;
+			text-decoration: none;
+			transition: opacity 0.2s ease;
+		}
+		.appstore-badge:hover {
+			opacity: 0.85;
+		}
+		.appstore-badge .appstore-badge-icon {
+			width: 28px;
+			height: 28px;
+			flex-shrink: 0;
+		}
+		.appstore-badge .appstore-badge-icon svg {
+			width: 100%;
+			height: 100%;
+			fill: #fff;
+		}
+		.appstore-badge .appstore-badge-text {
+			display: flex;
+			flex-direction: column;
+			line-height: 1.1;
+		}
+		.appstore-badge .appstore-badge-text .appstore-badge-small {
+			font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+			font-size: 11px;
+			font-weight: 400;
+			letter-spacing: 0.02em;
+			color: #fff;
+		}
+		.appstore-badge .appstore-badge-text .appstore-badge-big {
+			font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+			font-size: 22px;
+			font-weight: 600;
+			letter-spacing: -0.01em;
+			color: #fff;
+		}
+		.appstore-badge--compact {
+			padding: 6px 14px;
+			border-radius: 7px;
+			margin-left: 2.5em;
+			align-self: center;
+			position: relative;
+			top: -14px;
+		}
+		.appstore-badge--compact .appstore-badge-icon {
+			width: 24px;
+			height: 24px;
+		}
+		.appstore-badge--compact .appstore-badge-text .appstore-badge-small {
+			font-size: 10px;
+		}
+		.appstore-badge--compact .appstore-badge-text .appstore-badge-big {
+			font-size: 19px;
+		}
+	</style>
+</head>
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"></span>
-									<h1>Leaguebuddy</h1>
-								</a>
+			<!-- Logo -->
+			<a href="index.html" class="logo">
+				<span class="symbol"></span>
+				<h1>Leaguebuddy</h1>
+			</a>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+			<a href="https://apps.apple.com/cz/app/leaguebuddy/id6764039674?l=cs" class="appstore-badge appstore-badge--compact" target="_blank" rel="noopener">
+									<span class="appstore-badge-icon">
+										<svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141 8 184.8 8 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-65.7-90-65.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+									</span>
+				<span class="appstore-badge-text">
+										<span class="appstore-badge-small">Download on the</span>
+										<span class="appstore-badge-big">App Store</span>
+									</span>
+			</a>
 
-						</div>
-					</header>
+			<!-- Nav -->
+			<nav>
+				<ul>
+					<li><a href="#menu">Menu</a></li>
+				</ul>
+			</nav>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="views/privacy.html">Privacy Policy</a></li>
-							<li><a href="views/tos.html">Terms of Service</a></li>
-							<li><a href="views/elements.html">Elements</a></li>
-						</ul>
-					</nav>
+		</div>
+	</header>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h3>Hello and welcome to the page dedicated to my new application called league buddy.</h3>
-								<p>
-									Below are a couple of sections that show the current state/UI of the application. Following them, you can find a description of planned features and also
-									a rough description of how the app uses Riot API.
-								</p>
-							</header>
+	<!-- Menu -->
+	<nav id="menu">
+		<h2>Menu</h2>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="views/privacy.html">Privacy Policy</a></li>
+			<li><a href="views/tos.html">Terms of Service</a></li>
+			<li><a href="views/elements.html">Elements</a></li>
+		</ul>
+	</nav>
 
-							<h1 style="padding-top: 64px">Tierlist</h1>
-							<section class="tiles">
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+			<header>
+				<h3>Hello and welcome to the page dedicated to my new application called league buddy.</h3>
+				<p>
+					Below are a couple of sections that show the current state/UI of the application. Following them, you can find a description of planned features and also
+					a rough description of how the app uses Riot API.
+				</p>
+			</header>
 
-								<article>
+			<h1 style="padding-top: 64px">Tierlist</h1>
+			<section class="tiles">
+
+				<article>
 									<span class="image">
 										<img src="images/Tierlist.png" alt="" />
 									</span>
-								</article>
-							</section>
+				</article>
+			</section>
 
-							<h1 style="padding-top: 64px">Champion detail</h1>
-							<section class="tiles">
+			<h1 style="padding-top: 64px">Champion detail</h1>
+			<section class="tiles">
 
-								<article>
+				<article>
 									<span class="image">
 										<img src="images/ChampionDetail1.png" alt="" />
 									</span>
-								</article>
-								<article>
+				</article>
+				<article>
 									<span class="image">
 										<img src="images/ChampionDetail2.png" alt="" />
 									</span>
-								</article>
-								<article>
+				</article>
+				<article>
 									<span class="image">
 										<img src="images/ChampionDetail3.png" alt="" />
 									</span>
-								</article>
-								<article>
+				</article>
+				<article>
 									<span class="image">
 										<img src="images/ChampionDetail4.png" alt="" />
 									</span>
-								</article>
-							</section>
+				</article>
+			</section>
 
-							<h1 style="padding-top: 64px">Look for a summoner</h1>
-							<section class="tiles">
-								<article>
+			<h1 style="padding-top: 64px">Look for a summoner</h1>
+			<section class="tiles">
+				<article>
 									<span class="image">
 										<img src="images/LookForPlayer.png" alt="" />
 									</span>
-								</article>
-								<article>
+				</article>
+				<article>
 									<span class="image">
 										<img src="images/PlayerProfile.png" alt="" />
 									</span>
-								</article>
-							</section>
+				</article>
+			</section>
 
-							<h1 style="padding-top: 64px">Match detail</h1>
-							<section class="tiles">
-								<article>
+			<h1 style="padding-top: 64px">Match detail</h1>
+			<section class="tiles">
+				<article>
 									<span class="image">
 										<img src="images/MatchDetail1.png" alt="" />
 									</span>
-								</article>
-								<article>
+				</article>
+				<article>
 									<span class="image">
 										<img src="images/MatchDetail2.png" alt="" />
 									</span>
-								</article>
-							</section>
+				</article>
+			</section>
 
-							<h1 style="padding-top: 64px">User Profile</h1>
-							<p>Work in progress. Login process is hooked up through firebase and there will one day hopefully be a way to connect it
-								through RSO with riot account</p>
-							<p>Users will be asked to create an in-app profile during onboarding process where they will be able to set up their username, several game related tags etc.</p>
-							<section class="tiles">
-								<article>
+			<h1 style="padding-top: 64px">User Profile</h1>
+			<p>Work in progress. Login process is hooked up through firebase and there will one day hopefully be a way to connect it
+				through RSO with riot account</p>
+			<p>Users will be asked to create an in-app profile during onboarding process where they will be able to set up their username, several game related tags etc.</p>
+			<section class="tiles">
+				<article>
 									<span class="image">
 										<img src="images/UserProfile.png" alt="" />
 									</span>
-								</article>
-							</section>
+				</article>
+			</section>
 
-							<h1 style="padding-top: 64px">Future features</h1>
-							<p>There are several features planned for the application both small and quite big ones. However since this project is being developed as a practical part of my master’s thesis
-							it is still unknown which features will make it into the version that will be handed in. (deadline in May 2026)</p>
+			<h1 style="padding-top: 64px">Future features</h1>
+			<p>There are several features planned for the application both small and quite big ones. However since this project is being developed as a practical part of my master’s thesis
+				it is still unknown which features will make it into the version that will be handed in. (deadline in May 2026)</p>
 
-							<h2 style="padding-top: 64px">Buddy-Finder feature</h2>
-							<p>This was the original, you could say flagship, idea behind deciding to create this app in the first place. I often come across posts on different platforms, groups etc. where people
-							are looking for someone to play with. Wether it's just to have fun, or actually grind some ranked and try to climb some elo. And most of the people playing the game know the struggle of
-								trying to climb elo on their own without a partner to duo queue up with/team to queue up with.
-								Hence, I came up with an idea of a community feature, where (in the initial, most simple version at least) users would be able to select some filters,
-								like Language, Open to VC, Voice chat platforms, Rank, In game interests (grind elo, fun, troll pick teemo, ...), etc. Based on this, the app would find users that match these filters
-								and the user could give them a like/thumbs up/or whatever. Mind you, these users would be represented only by their in-app profiles and usernames, not the riot usernames to prevent friend request spamming.
-								If the other person does the same, only then both users receive each others riot usernames and can add each other.
-							</p>
-							<p>This feature could very well be extended to finding buddies for clash too, although it would probably look a lot different.</p>
+			<h2 style="padding-top: 64px">Buddy-Finder feature</h2>
+			<p>This was the original, you could say flagship, idea behind deciding to create this app in the first place. I often come across posts on different platforms, groups etc. where people
+				are looking for someone to play with. Wether it's just to have fun, or actually grind some ranked and try to climb some elo. And most of the people playing the game know the struggle of
+				trying to climb elo on their own without a partner to duo queue up with/team to queue up with.
+				Hence, I came up with an idea of a community feature, where (in the initial, most simple version at least) users would be able to select some filters,
+				like Language, Open to VC, Voice chat platforms, Rank, In game interests (grind elo, fun, troll pick teemo, ...), etc. Based on this, the app would find users that match these filters
+				and the user could give them a like/thumbs up/or whatever. Mind you, these users would be represented only by their in-app profiles and usernames, not the riot usernames to prevent friend request spamming.
+				If the other person does the same, only then both users receive each others riot usernames and can add each other.
+			</p>
+			<p>This feature could very well be extended to finding buddies for clash too, although it would probably look a lot different.</p>
 
-							<h2 style="padding-top: 64px">Learning module</h2>
-							<p>This is only a very rough idea, since im not sure how many players would actually use something like this in an application. However, I think it would be nice to have a sort of
-								one-stop shop for knowledge about the games mechanics if one would like to learn about them. This module could either be completely created by me with the help of some higher end players that know more about the
-								games mechanics than I do, or it could just be a sort of compilation of the resources already out there. For example some text about a mechanic and then links to videos talking about it.
-							</p>
+			<h2 style="padding-top: 64px">Learning module</h2>
+			<p>This is only a very rough idea, since im not sure how many players would actually use something like this in an application. However, I think it would be nice to have a sort of
+				one-stop shop for knowledge about the games mechanics if one would like to learn about them. This module could either be completely created by me with the help of some higher end players that know more about the
+				games mechanics than I do, or it could just be a sort of compilation of the resources already out there. For example some text about a mechanic and then links to videos talking about it.
+			</p>
 
-							<h2 style="padding-top: 64px">Challenges and minigames</h2>
-							<p>
-								There are plenty of ideas about what I could create here, however the most basic one is having some game related challenges, for which users could gain some sort of in-app currency/points/whatever.
-								These could then be used for other stuff in app, like re-rolling challenges, buying in-app cosmetics for their profiles (would need to also set up an in-app shop for this obviously), or maybe purchasing some sort of riot
-								gift cards if that's still possible.
-								Also, among using these points, I had an idea about creating some sort of leaderboard of users, where they will be sorted by the amount of points they gained (it would be reset every once in a while). I am aware
-								the app should not be providing any custom rankings/leaderboards, similar to the ones in game which are elo based. Since this isn't elo based I am hoping this would be a-okay.
-								Final point to this feature, more complex ideas I had is creating some simple mini-games out of these challenges. These could be also made as a permanent feature or maybe a holiday one.
-							</p>
+			<h2 style="padding-top: 64px">Challenges and minigames</h2>
+			<p>
+				There are plenty of ideas about what I could create here, however the most basic one is having some game related challenges, for which users could gain some sort of in-app currency/points/whatever.
+				These could then be used for other stuff in app, like re-rolling challenges, buying in-app cosmetics for their profiles (would need to also set up an in-app shop for this obviously), or maybe purchasing some sort of riot
+				gift cards if that's still possible.
+				Also, among using these points, I had an idea about creating some sort of leaderboard of users, where they will be sorted by the amount of points they gained (it would be reset every once in a while). I am aware
+				the app should not be providing any custom rankings/leaderboards, similar to the ones in game which are elo based. Since this isn't elo based I am hoping this would be a-okay.
+				Final point to this feature, more complex ideas I had is creating some simple mini-games out of these challenges. These could be also made as a permanent feature or maybe a holiday one.
+			</p>
 
-							<h2 style="padding-top: 64px">Detailed statistics</h2>
-							<p>
-								On this feature I am still quite unclear, but I am pretty sure with the amount of data Riot API provides it could be possible to make. The idea is to have a custom detailed data/graphs/visualization, ready
-								for the user either in general, or for a particular match. It could show where he/she excelled, or fell behind, where the user deviated from the mostly used builds (perks/items) and much more.
-							</p>
-
-
-							<h1 style="padding-top: 64px">Usages of Riot API</h1>
-							<p>
-								Up until now, I have been using the riot api, mostly to periodically pull data about match details and compute tierlists and champion details (aggregated data).
-								This included at the start, pulling up the entries of a given league so that I have a base pool of summoners. <i>This should not be necessary anymore</i>
-							</p>
-							<p>
-								After I have a pool of summoners, I can start with the actual "match mining". Using the match api, I try to get all the matches any given users played in since the current patch dropped. This gives me a list of matchIds,
-								which are later used to call the match detail api, from which I acquire the champion, perk, item, etc. data, and also I am able to extend my summoner pool with the users that played in any given match.
-								This could for the most part be done under the dev api key rate limits.
-							</p>
-
-							<p>
-								However, what I will most definitely not be able to do with the current keys rate limits is support users which want to look up a summoners profile. This (in current state) requires 10 calls to the riot api. That is, 1 call to
-								the account api, 1 call to fetch the 8 most recent matches and lastly 8 calls for match details - one for each match. Suppose I only had a couple of users, the current rate limit could suffice, however with larger user base, definitely not.
-							</p>
+			<h2 style="padding-top: 64px">Detailed statistics</h2>
+			<p>
+				On this feature I am still quite unclear, but I am pretty sure with the amount of data Riot API provides it could be possible to make. The idea is to have a custom detailed data/graphs/visualization, ready
+				for the user either in general, or for a particular match. It could show where he/she excelled, or fell behind, where the user deviated from the mostly used builds (perks/items) and much more.
+			</p>
 
 
-							<h1 style="padding-top: 64px">Interactive Wireframe</h1>
-							<p>Below you can explore the interactive Figma prototype of the application.</p>
+			<h1 style="padding-top: 64px">Usages of Riot API</h1>
+			<p>
+				Up until now, I have been using the riot api, mostly to periodically pull data about match details and compute tierlists and champion details (aggregated data).
+				This included at the start, pulling up the entries of a given league so that I have a base pool of summoners. <i>This should not be necessary anymore</i>
+			</p>
+			<p>
+				After I have a pool of summoners, I can start with the actual "match mining". Using the match api, I try to get all the matches any given users played in since the current patch dropped. This gives me a list of matchIds,
+				which are later used to call the match detail api, from which I acquire the champion, perk, item, etc. data, and also I am able to extend my summoner pool with the users that played in any given match.
+				This could for the most part be done under the dev api key rate limits.
+			</p>
 
-							<div style="
+			<p>
+				However, what I will most definitely not be able to do with the current keys rate limits is support users which want to look up a summoners profile. This (in current state) requires 10 calls to the riot api. That is, 1 call to
+				the account api, 1 call to fetch the 8 most recent matches and lastly 8 calls for match details - one for each match. Suppose I only had a couple of users, the current rate limit could suffice, however with larger user base, definitely not.
+			</p>
+
+
+			<h1 style="padding-top: 64px">Interactive Wireframe</h1>
+			<p>Below you can explore the interactive Figma prototype of the application.</p>
+
+			<div style="
 						  position: relative;
 						  width: 100%;
 						  padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -200,68 +274,68 @@
 						  overflow: hidden;
 						  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
 						  margin: 2em 0;">
-								<iframe
-										style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-										src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FtcQgperzJOBHaNpwzfKV6V%2FLeagueBuddy%3Fnode-id%3D7-277%26p%3Df%26t%3DFN51cE6G8ZeDe0hM-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D7%253A277"
-										allowfullscreen
-								></iframe>
-							</div>
-						</div>
-					</div>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<!--							<section>-->
-						<!--								<h2>Get in touch</h2>-->
-						<!--								<form method="post" action="#">-->
-						<!--									<div class="fields">-->
-						<!--										<div class="field half">-->
-						<!--											<input type="text" name="name" id="name" placeholder="Name" />-->
-						<!--										</div>-->
-						<!--										<div class="field half">-->
-						<!--											<input type="email" name="email" id="email" placeholder="Email" />-->
-						<!--										</div>-->
-						<!--										<div class="field">-->
-						<!--											<textarea name="message" id="message" placeholder="Message"></textarea>-->
-						<!--										</div>-->
-						<!--									</div>-->
-						<!--									<ul class="actions">-->
-						<!--										<li><input type="submit" value="Send" class="primary" /></li>-->
-						<!--									</ul>-->
-						<!--								</form>-->
-						<!--							</section>-->
-						<section>
-							<h2>Follow</h2>
-							<ul class="icons">
-								<!--									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>-->
-								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<!--									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>-->
-								<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-discord"><span class="label">Discord</span></a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Support me</h2>
-							<ul class="icons">
-								<li><a href="https://ko-fi.com/tvoje-meno" class="icon solid style2 fa-mug-hot"><span class="label">Ko-fi</span></a></li>
-							</ul>
-						</section>
-						<ul class="copyright">
-							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</footer>
-
+				<iframe
+						style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+						src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FtcQgperzJOBHaNpwzfKV6V%2FLeagueBuddy%3Fnode-id%3D7-277%26p%3Df%26t%3DFN51cE6G8ZeDe0hM-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D7%253A277"
+						allowfullscreen
+				></iframe>
 			</div>
+		</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<!--							<section>-->
+			<!--								<h2>Get in touch</h2>-->
+			<!--								<form method="post" action="#">-->
+			<!--									<div class="fields">-->
+			<!--										<div class="field half">-->
+			<!--											<input type="text" name="name" id="name" placeholder="Name" />-->
+			<!--										</div>-->
+			<!--										<div class="field half">-->
+			<!--											<input type="email" name="email" id="email" placeholder="Email" />-->
+			<!--										</div>-->
+			<!--										<div class="field">-->
+			<!--											<textarea name="message" id="message" placeholder="Message"></textarea>-->
+			<!--										</div>-->
+			<!--									</div>-->
+			<!--									<ul class="actions">-->
+			<!--										<li><input type="submit" value="Send" class="primary" /></li>-->
+			<!--									</ul>-->
+			<!--								</form>-->
+			<!--							</section>-->
+			<section>
+				<h2>Follow</h2>
+				<ul class="icons">
+					<!--									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>-->
+					<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+					<!--									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>-->
+					<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="#" class="icon brands style2 fa-discord"><span class="label">Discord</span></a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Support me</h2>
+				<ul class="icons">
+					<li><a href="https://ko-fi.com/tvoje-meno" class="icon solid style2 fa-mug-hot"><span class="label">Ko-fi</span></a></li>
+				</ul>
+			</section>
+			<ul class="copyright">
+				<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
 
-	</body>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>
